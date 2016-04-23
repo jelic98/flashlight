@@ -1,0 +1,74 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".MainActivity"
+    android:id="@+id/activity_main">
+
+    <ImageButton
+        android:id="@+id/btnSound"
+        android:soundEffectsEnabled="false"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/btn_sound_on"
+        android:background="@null"
+        android:contentDescription="@null"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp" />
+
+    <ImageButton
+        android:id="@+id/btnSwitch"
+        android:soundEffectsEnabled="false"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/btn_switch_on"
+        android:background="@null"
+        android:contentDescription="@null"
+    />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/copy"
+        android:textColor="#000000"
+        android:id="@+id/tvCopyRight1"
+        android:layout_above="@+id/tvCopyRight2"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+    />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rights"
+        android:textColor="#000000"
+        android:id="@+id/tvCopyRight2"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center"
+    />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/one"
+        android:padding="10dp"
+        android:id="@+id/tvMode"
+        android:background="@drawable/tv_background"
+        android:clickable="true"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/btnSwitch"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp" />
+
+</RelativeLayout>
